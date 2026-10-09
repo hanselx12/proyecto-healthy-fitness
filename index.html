@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy FITNESS | Inicio</title>
+  <!-- Favicon / Logo en la pestaña del navegador -->
+  <link rel="icon" type="image/png" href="img/logo-actualizado-app.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<!-- Script para abrir/cerrar las 3 líneas en el celular -->
+  <script>
+    const menuBtn = document.getElementById('menu-toggle');
+    const menuLista = document.getElementById('nav-links');
+
+    if (menuBtn && menuLista) {
+      menuBtn.addEventListener('click', function() {
+        menuLista.classList.toggle('activo');
+      });
+    }
+  </script>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN COMPLETA -->
+  <header class="navbar-header">
+    <nav class="navbar">
+      <!-- 1. Logo -->
+      <a href="index.html" class="nav-logo">
+        <span class="logo-white">HEALTHY</span><span class="logo-yellow">FITNESS</span>
+      </a>
+
+      <!-- 2. Menú de enlaces (en celular se oculta hasta presionar las 3 líneas) -->
+      <ul class="nav-links">
+  <li><a href="index.html" class="active">Inicio</a></li>
+  <li><a href="nosotros.html">Nosotros</a></li>
+  <li><a href="programas.html">Programas</a></li>
+  <li><a href="horarios.html">Horarios</a></li>
+  <li><a href="salas.html">Salas</a></li>
+  <li><a href="planes.html">Planes</a></li>
+  <li><a href="tienda.html">Tienda</a></li>
+  <li><a href="servicios.html">Servicios</a></li>
+  <li><a href="contacto.html">Contacto</a></li>
+</ul>
+
+      <!-- 3. Lado derecho: Botón Carrito y Botón 3 líneas -->
+      <div class="nav-actions">
+        <!-- Carrito siempre visible -->
+        <a href="tienda.html" class="btn-carrito">
+          🛒 <span>CARRITO</span>
+        </a>
+
+        <!-- Botón de las 3 líneas para el celular -->
+       <button class="menu-toggle" id="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Abrir menú">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+      </div>
+    </nav>
+  </header>
+
+<!-- BANNER DE INICIO -->
+<section class="banner-inicio">
+  <img src="img/inicio-hero.jpg" alt="Healthy Fitness Inicio" class="img-inicio">
+</section>
+
+<!-- Bloque 1: El gimnasio más completo de San Isidro -->
+<section class="seccion-san-isidro" style="width: 100% !important; padding: 60px 0 !important; background-color: #ffffff !important;">
+  <div class="san-isidro-grid" style="max-width: 1100px !important; margin: 0 auto !important; display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; gap: 80px !important; padding: 0 30px !important; box-sizing: border-box !important;">
+    
+    <!-- Columna de texto estilizada -->
+    <div class="san-isidro-texto" style="flex: 1 !important; max-width: 480px !important;">
+      
+      <!-- Título principal -->
+      <h2 style="color: #e50914 !important; font-size: 2.1rem !important; font-weight: 900 !important; line-height: 1.25 !important; letter-spacing: 0.5px !important; margin: 0 0 25px 0 !important;">
+        ¡El gimnasio más completo<br>de San Isidro!
+      </h2>
+
+      <!-- Párrafo 1 -->
+      <p style="font-size: 1.05rem !important; line-height: 1.75 !important; letter-spacing: 0.3px !important; color: #444444 !important; margin: 0 0 20px 0 !important;">
+        Somos un centro de entrenamiento 100% peruano, con más de 15 años de impecable trayectoria.
+      </p>
+
+      <!-- Párrafo 2 (Destacado) -->
+      <p style="font-size: 1.05rem !important; line-height: 1.75 !important; letter-spacing: 0.3px !important; margin: 0 !important;">
+        <strong style="color: #111111 !important; font-weight: 800 !important;">Brindando a nuestros socios diversos ambientes de entrenamiento.</strong>
+      </p>
+
+    </div>
+
+    <!-- Columna de la imagen -->
+    <div class="san-isidro-img" style="flex: 1 !important; max-width: 420px !important; text-align: right !important;">
+      <img src="img/sobre-nosotros.jpg" alt="Entrenamiento Healthy Fitness" onerror="this.src='https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=600'" style="width: 100% !important; max-width: 420px !important; height: auto !important; display: block !important; border-radius: 8px !important; margin-left: auto !important;">
+    </div>
+
+  </div>
+</section>
+
+ <!-- Bloque 2: Banner Comunidad Gym Box Cycling (Todo a lo largo) -->
+<section class="seccion-comunidad" style="width: 100% !important; margin: 0 !important; padding: 0 !important; display: block !important;">
+  <img src="img/banner-comunidad.jpg" alt="Comunidad Healthy Fitness" style="width: 100% !important; max-width: 100% !important; height: auto !important; display: block !important; border-radius: 0 !important; margin: 0 !important;">
+</section>
+
+  <!-- SECCIÓN TESTIMONIO: YAMILE PEÑA -->
+<!-- BANNER TESTIMONIO YAMILE PEÑA COMPLETO -->
+<!-- 1. TÍTULO TESTIMONIOS (ARRIBA) -->
+<div style="background-color: #ffffff; padding: 40px 0 20px 0; text-align: center;">
+  <h2 style="color: #e50914; font-size: 2.8rem; font-weight: 900; letter-spacing: 2px; margin: 0; text-transform: uppercase;">
+    TESTIMONIOS
+  </h2>
+</div>
+
+<!-- 2. IMAGEN DE YAMILE (EN MEDIO) -->
+<section style="width: 100%; background-color: #000000; display: flex; justify-content: center; margin: 0; padding: 0;">
+  <img src="img/yamile-peña.jpg" alt="Testimonio Yamile Peña" style="width: 100%; max-width: 1200px; height: auto; display: block;">
+</section>
+
+
+
+<!-- Encabezado de Testimonios y Aplicativo -->
+<div style="width: 100%; background-color: #ffffff; padding: 45px 0 25px 0; text-align: center; margin: 0; box-sizing: border-box;">
+  <h2 style="color: #e50914; font-size: 2.8rem; font-weight: 900; letter-spacing: 2px; margin: 0; text-transform: uppercase;">
+    APLICATIVO
+  </h2>
+</div>
+
+  <div class="barra-subtitulo-negra">
+    <p>¡Planifica y controla tu entrenamiento a un click!</p>
+  </div>
+
+  <!-- BANNER CONOCE NUESTRO APLICATIVO -->
+<section class="banner-app-completo">
+  <img src="img/conoce-app.jpg" alt="Conoce Nuestro Aplicativo" class="img-banner-app">
+</section>
+
+  <!-- BANNER CONOCE NUESTRO APLICATIVO -->
+<section class="banner-app-completo">
+  <img src="img/conocer-app.jpg" alt="Conoce Nuestro Aplicativo" class="img-banner-app">
+</section>
+
+</section>
+  <!-- Pie de Página Oficial Healthy Fitness -->
+  <footer>
+    <div class="footer-container">
+      
+      <!-- Logo Marca -->
+      <div class="footer-col">
+        <div class="footer-logo">
+          <span>🏃</span> Healthy
+          <small>FITNESS</small>
+        </div>
+      </div>
+
+      <!-- Teléfono -->
+      <div class="footer-col">
+        <div class="footer-item">
+          <span class="footer-icon">📞</span>
+          <div class="footer-text">
+            <strong>ESCRÍBENOS AL:</strong>
+            <p><a href="https://wa.me/51938608646" target="_blank" style="color: #fff; text-decoration: none;">+ 51 938 608 646</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horarios -->
+      <div class="footer-col">
+        <div class="footer-item">
+          <span class="footer-icon">🕒</span>
+          <div class="footer-text">
+            <strong>HORARIOS DE ATENCIÓN:</strong>
+            <p>Lun. - Vie.: 06:00 am a 10:00 pm</p>
+            <p>Sáb.: 08:00 am a 04:00 pm</p>
+            <p>Dom.: 09:00 am a 01:00 pm</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sede -->
+      <div class="footer-col">
+        <div class="footer-item">
+          <span class="footer-icon">📍</span>
+          <div class="footer-text">
+            <strong>ÚNICA SEDE:</strong>
+            <p>Isaac Albéniz N° 253,<br>San Isidro, Lima, Perú.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Redes Sociales -->
+    <div class="footer-socials">
+      <span>Síguenos en:</span>
+      <div class="social-icons">
+        <a href="#" class="social-box">f</a>
+        <a href="#" class="social-box">📷</a>
+        <a href="#" class="social-box">▶</a>
+        <a href="#" class="social-box">🎵</a>
+      </div>
+    </div>
+  </footer>
+<script>
+    function toggleMenu() {
+      var menu = document.getElementById("nav-links");
+      if (menu.classList.contains("activo")) {
+        menu.classList.remove("activo");
+      } else {
+        menu.classList.add("activo");
+      }
+    }
+  </script>
+</body>
+</body>
+</html>

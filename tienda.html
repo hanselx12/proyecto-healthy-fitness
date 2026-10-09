@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy FITNESS | Tienda</title>
+  <!-- Favicon / Logo en la pestaña del navegador -->
+  <link rel="icon" type="image/png" href="img/logo-actualizado-app.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="background-color: #ffffff; margin: 0; padding: 0;">
+
+  <!-- Barra de Navegación -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">Healthy<span>FITNESS</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="programas.html">Programas</a></li>
+        <li><a href="horarios.html">Horarios</a></li>
+        <li><a href="salas.html">Salas</a></li>
+        <li><a href="planes.html">Planes</a></li>
+        <li><a href="tienda.html" class="active">Tienda</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="pago.html" class="btn-cta">Carrito</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Banner Superior -->
+  <section class="tienda-hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('img/banner-tienda.jpg');">
+    <h1>TIENDA</h1>
+  </section>
+
+  <!-- Grilla de Productos con Enlaces Inteligentes -->
+  <main class="tienda-main">
+    <div class="tienda-grid">
+
+      <!-- Producto 1: Guantes Box (S/ 99.00) -->
+      <article class="prod-card">
+        <div class="prod-img-box">
+          <img src="img/prod-guantes.jpg" alt="Guantes Box" onerror="this.src='https://images.unsplash.com/photo-1583473848882-f9a5bc7fd2ee?w=500'">
+        </div>
+        <h3 class="prod-nombre">Guantes Box</h3>
+        <div class="prod-precio">
+          <span class="prod-precio-antiguo">S/150.00</span> S/99.00
+        </div>
+        <!-- Botón que envía el nombre y precio de los guantes -->
+        <a href="pago.html?producto=Guantes+Box&precio=99&cantidad=1" class="btn-add-tienda">Añadir al carrito</a>
+      </article>
+
+      <!-- Producto 2: Toalla Healthyfit (S/ 20.00) -->
+      <article class="prod-card">
+        <div class="prod-img-box" style="border-color: #facc15;">
+          <img src="img/prod-toalla.jpg" alt="Toalla Healthyfit" onerror="this.src='https://images.unsplash.com/photo-1616627547584-bf28cee262db?w=500'">
+        </div>
+        <h3 class="prod-nombre">Toalla Healthyfit</h3>
+        <div class="prod-precio">
+          <span class="prod-precio-antiguo">S/42.00</span> S/20.00
+        </div>
+        <!-- Botón que envía el nombre y precio de la toalla -->
+        <a href="pago.html?producto=Toalla+Healthyfit&precio=20&cantidad=1" class="btn-add-tienda">Añadir al carrito</a>
+      </article>
+
+      <!-- Producto 3: Maletín Healthyfit (S/ 69.00) -->
+      <article class="prod-card">
+        <div class="prod-img-box" style="border-color: #facc15;">
+          <img src="img/prod-maletin.jpg" alt="Maletín Healthyfit" onerror="this.src='https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500'">
+        </div>
+        <h3 class="prod-nombre">Maletín Healthyfit</h3>
+        <div class="prod-precio">
+          <span class="prod-precio-antiguo">S/89.00</span> S/69.00
+        </div>
+        <!-- Botón que envía el nombre y precio del maletín -->
+        <a href="pago.html?producto=Malet%C3%ADn+Healthyfit&precio=69&cantidad=1" class="btn-add-tienda">Añadir al carrito</a>
+      </article>
+
+      <!-- Producto 4: PLAN NO PARES (S/ 119.00) -->
+      <article class="prod-card">
+        <div class="prod-img-box" style="border-color: #facc15;">
+          <img src="img/prog-stretching.jpg" alt="Plan No Pares" onerror="this.src='https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500'" style="width:100%; height:100%; object-fit: cover;">
+        </div>
+        <h3 class="prod-nombre">PLAN NO PARES</h3>
+        <div class="prod-precio">
+          S/119.00
+        </div>
+        <!-- Botón que envía el plan -->
+        <a href="pago.html?producto=PLAN+NO+PARES&precio=119&cantidad=1" class="btn-add-tienda">Añadir al carrito</a>
+      </article>
+
+    </div>
+  </main>
+  <!-- Pie de Página -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <div class="footer-logo"><span>🏃</span> Healthy<small>FITNESS</small></div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-item"><span class="footer-icon">📞</span><div class="footer-text"><strong>ESCRÍBENOS AL:</strong><p>+ 51 938 608 646</p></div></div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-item"><span class="footer-icon">🕒</span><div class="footer-text"><strong>HORARIOS DE ATENCIÓN:</strong><p>Lun. - Vie.: 06:00 am a 10:00 pm</p><p>Sáb.: 08:00 am a 04:00 pm</p><p>Dom.: 09:00 am a 01:00 pm</p></div></div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-item"><span class="footer-icon">📍</span><div class="footer-text"><strong>ÚNICA SEDE:</strong><p>Isaac Albéniz N° 253,<br>San Isidro, Lima, Perú.</p></div></div>
+      </div>
+    </div>
+    <div class="footer-socials">
+      <span>Síguenos en:</span>
+      <div class="social-icons">
+        <a href="#" class="social-box">f</a>
+        <a href="#" class="social-box">📷</a>
+        <a href="#" class="social-box">▶</a>
+        <a href="#" class="social-box">🎵</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

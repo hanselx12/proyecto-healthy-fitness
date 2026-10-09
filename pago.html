@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy FITNESS | Checkout</title>
+  <!-- Favicon / Logo en la pestaña del navegador -->
+  <link rel="icon" type="image/png" href="img/logo-actualizado-app.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="background-color: #ffffff; color: #000000; margin: 0; padding: 0; font-family: sans-serif;">
+
+  <!-- Barra de Navegación -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">Healthy<span>FITNESS</span></a>
+     <ul class="nav-links">
+  <li><a href="index.html" class="active">Inicio</a></li>
+  <li><a href="nosotros.html">Nosotros</a></li>
+  <li><a href="programas.html">Programas</a></li>
+  <li><a href="horarios.html">Horarios</a></li>
+  <li><a href="salas.html">Salas</a></li>
+  <li><a href="planes.html">Planes</a></li>
+  <li><a href="tienda.html">Tienda</a></li>
+  <li><a href="servicios.html">Servicios</a></li>
+  <li><a href="contacto.html">Contacto</a></li>
+</ul>
+    </div>
+  </header>
+
+  <!-- Contenedor Principal Chectkout -->
+  <main style="max-width: 650px; margin: 40px auto 80px; padding: 0 20px;">
+    
+    <h1 style="color: #dc2626; font-size: 2.3rem; font-weight: 900; margin: 0 0 20px 0;">Chectkout</h1>
+    
+    <h3 style="font-size: 1.15rem; font-weight: 700; color: #374151; margin-bottom: 25px;">Detalles de facturación</h3>
+
+    <form onsubmit="event.preventDefault(); alert('¡Pago realizado con éxito! Gracias por tu compra en Healthy Fitness.');">
+      
+      <!-- Fila Nombre y Apellido -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 18px;">
+        <div>
+          <label style="display: block; font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; color: #111;">Nombre <span style="color: #dc2626;">*</span></label>
+          <input type="text" value="Hansel Aaron" required style="width: 100%; box-sizing: border-box; height: 36px; border: 1.5px solid #facc15; padding: 6px 10px; font-size: 1rem; background: #fff; color: #000;">
+        </div>
+        <div>
+          <label style="display: block; font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; color: #111;">Apellido <span style="color: #dc2626;">*</span></label>
+          <input type="text" value="Huaman Erique" required style="width: 100%; box-sizing: border-box; height: 36px; border: 1.5px solid #facc15; padding: 6px 10px; font-size: 1rem; background: #fff; color: #000;">
+        </div>
+      </div>
+
+      <!-- Nombre de la empresa -->
+      <div style="margin-bottom: 18px;">
+        <label style="display: block; font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; color: #111;">Nombre de la empresa</label>
+        <input type="text" placeholder="Opcional" style="width: 100%; box-sizing: border-box; height: 36px; border: 1.5px solid #facc15; padding: 6px 10px; font-size: 1rem; background: #fff; color: #000;">
+      </div>
+
+      <!-- Dirección -->
+      <div style="margin-bottom: 18px;">
+        <label style="display: block; font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; color: #111;">Dirección</label>
+        <input type="text" value="Calle Piura 284" required style="width: 100%; box-sizing: border-box; height: 36px; border: 1.5px solid #facc15; padding: 6px 10px; font-size: 1rem; background: #fff; color: #000;">
+      </div>
+
+      <!-- Teléfono -->
+      <div style="margin-bottom: 18px;">
+        <label style="display: block; font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; color: #111;">Teléfono</label>
+        <input type="tel" value="+51 930 874 027" required style="width: 100%; box-sizing: border-box; height: 36px; border: 1.5px solid #facc15; padding: 6px 10px; font-size: 1rem; background: #fff; color: #000;">
+      </div>
+
+      <!-- Correo electrónico -->
+      <div style="margin-bottom: 30px;">
+        <label style="display: block; font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; color: #111;">Correo electrónico</label>
+        <input type="email" value="drakeaaron12@gmail.com" required style="width: 100%; box-sizing: border-box; height: 36px; border: 1.5px solid #facc15; padding: 6px 10px; font-size: 1rem; background: #fff; color: #000;">
+      </div>
+
+      <!-- Información adicional -->
+      <h3 style="font-size: 1.15rem; font-weight: 700; color: #374151; margin-bottom: 10px;">Información adicional</h3>
+      <div style="margin-bottom: 35px;">
+        <label style="display: block; font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; color: #111;">Notas del pedido (opcional)</label>
+        <textarea rows="4" placeholder="Notas sobre tu pedido..." style="width: 100%; box-sizing: border-box; border: 1.5px solid #facc15; padding: 10px; font-size: 1rem; background: #fff; color: #000; resize: vertical;"></textarea>
+      </div>
+
+      <!-- Sección Tu Pedido -->
+      <h2 style="font-size: 1.7rem; font-weight: 900; color: #000; margin: 30px 0 18px 0;">Tu pedido</h2>
+
+      <table style="width: 100%; border-collapse: collapse; border: 2px solid #facc15; margin-bottom: 25px; background: #fff;">
+        <tr style="border-bottom: 2px solid #facc15;">
+          <th style="text-align: left; padding: 12px 16px; font-size: 1.05rem; font-weight: 900; color: #000;">Producto:</th>
+          <th id="txtProducto" style="text-align: right; padding: 12px 16px; font-size: 1.05rem; font-weight: 900; color: #ef4444;">PLAN NO PARES</th>
+        </tr>
+        <tr style="border-bottom: 2px solid #facc15;">
+          <td style="padding: 12px 16px; font-size: 1.05rem; font-weight: 900; color: #000;">Precio:</td>
+          <td id="txtPrecio" style="text-align: right; padding: 12px 16px; font-size: 1rem; color: #374151;">S/119.00</td>
+        </tr>
+        <tr style="border-bottom: 2px solid #facc15;">
+          <td style="padding: 12px 16px; font-size: 1.05rem; font-weight: 900; color: #000;">Cantidad:</td>
+          <td id="txtCantidad" style="text-align: right; padding: 12px 16px; font-size: 1.05rem; font-weight: 800; color: #000;">1</td>
+        </tr>
+        <tr style="border-bottom: 2px solid #facc15;">
+          <td style="padding: 12px 16px; font-size: 1.05rem; font-weight: 900; color: #000;">Subtotal:</td>
+          <td id="txtSubtotal" style="text-align: right; padding: 12px 16px; font-size: 1.05rem; font-weight: 800; color: #000;">S/119.00:</td>
+        </tr>
+        <tr>
+          <td style="padding: 12px 16px; font-size: 1.05rem; font-weight: 900; color: #000;">Total:</td>
+          <td id="txtTotal" style="text-align: right; padding: 12px 16px; font-size: 1.15rem; font-weight: 900; color: #000;">S/119.00</td>
+        </tr>
+      </table>
+
+      <!-- Botón Finalizar compra -->
+      <div>
+        <button type="submit" style="background-color: #eab308; color: #000000; font-size: 1.25rem; font-weight: 900; padding: 14px 34px; border: none; border-radius: 4px; cursor: pointer;">
+          Finalizar compra
+        </button>
+      </div>
+
+    </form>
+
+  </main>
+
+  <!-- Script para leer la URL y actualizar automáticamente -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      
+      const producto = params.get('producto') || 'PLAN NO PARES';
+      const precio = parseFloat(params.get('precio')) || 119.00;
+      const cantidad = parseInt(params.get('cantidad')) || 1;
+      
+      const total = (precio * cantidad).toFixed(2);
+
+      document.getElementById('txtProducto').innerText = producto;
+      document.getElementById('txtPrecio').innerText = 'S/' + precio.toFixed(2);
+      document.getElementById('txtCantidad').innerText = cantidad;
+      document.getElementById('txtSubtotal').innerText = 'S/' + total + ':';
+      document.getElementById('txtTotal').innerText = 'S/' + total;
+    });
+  </script>
+
+  <!-- Pie de Página -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <div class="footer-logo"><span>🏃</span> Healthy<small>FITNESS</small></div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-item"><span class="footer-icon">📞</span><div class="footer-text"><strong>ESCRÍBENOS AL:</strong><p>+ 51 938 608 646</p></div></div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-item"><span class="footer-icon">🕒</span><div class="footer-text"><strong>HORARIOS DE ATENCIÓN:</strong><p>Lun. - Vie.: 06:00 am a 10:00 pm</p><p>Sáb.: 08:00 am a 04:00 pm</p><p>Dom.: 09:00 am a 01:00 pm</p></div></div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-item"><span class="footer-icon">📍</span><div class="footer-text"><strong>ÚNICA SEDE:</strong><p>Isaac Albéniz N° 253,<br>San Isidro, Lima, Perú.</p></div></div>
+      </div>
+    </div>
+    <div class="footer-socials">
+      <span>Síguenos en:</span>
+      <div class="social-icons">
+        <a href="#" class="social-box">f</a>
+        <a href="#" class="social-box">📷</a>
+        <a href="#" class="social-box">▶</a>
+        <a href="#" class="social-box">🎵</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
